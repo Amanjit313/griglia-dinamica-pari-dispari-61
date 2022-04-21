@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #021527;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+}
+
+.square{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    color: white;
+}  
+
+.square span{
+    display: none;
+}
+.square.clicked span{
+    display: block;
+}
+
+.square.clicked.even{
+    background-color: rgb(8, 137, 94);
+}
+.square.clicked.odd{
+    background-color: brown;
+}
